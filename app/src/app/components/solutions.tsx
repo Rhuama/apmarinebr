@@ -1,13 +1,13 @@
 export default function Solutions() {
     return (
     <div id="solutions" className="px-4 py-16 mx-auto h-[911px] flex items-center sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="flex flex-col mb-6 lg:flex-row md:mb-10">
-        <div className="lg:w-1/2">
+      <div className="flex flex-col mr-6 mb-6 md:mb-10">
+        <div >
           <h2 className="max-w-md mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none xl:max-w-lg">
             Soluções Integradas para o Transporte Marítimo
           </h2>
         </div>
-        <div className="lg:w-1/2">
+        <div >
           <p className="text-base text-gray-700 md:text-lg">
             Oferecemos soluções abrangentes e personalizadas para atender todas as suas necessidades de transporte marítimo, desde a logística completa até a consultoria técnica especializada.
           </p>
