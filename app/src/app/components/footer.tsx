@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <section id="contact" className="bg-white h-[911px] flex items-end dark:bg-gray-900 mt-6">
+      <section id="contact" className="bg-white flex items-end dark:bg-gray-900 mt-6 lg:h-[911px]">
         <div className="container px-6 py-12 mx-auto">
           <div className="text-center">
             <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">
@@ -52,9 +52,6 @@ export default function Footer() {
                 +55 (96) 3242-1995
               </p>
               <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                (41) 99275-7675
-              </p>
-              <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
                 Segunda à Sexta-feira: 08 às 12hs – 13 às 18 hs.
               </p>
             </div>
@@ -95,9 +92,6 @@ export default function Footer() {
                 +55 (91) 3227-2341
               </p>
               <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                (41) 99275-7675
-              </p>
-              <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
                 Segunda à Sexta-feira: 08 às 12hs – 13 às 18 hs.
               </p>
             </div>
@@ -136,9 +130,6 @@ export default function Footer() {
               </p>
               <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
                 +55 (98) 3241-1209
-              </p>
-              <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                (41) 99275-7675
               </p>
               <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
                 Segunda à Sexta-feira: 08 às 12hs – 13 às 18 hs.

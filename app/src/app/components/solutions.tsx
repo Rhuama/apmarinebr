@@ -1,19 +1,25 @@
 export default function Solutions() {
-    return (
-    <div id="solutions" className="px-4 py-16 mx-auto h-[911px] flex items-center sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  return (
+    <div
+      id="solutions"
+      className="px-4 py-16 mx-auto flex flex-col items-center sm:max-w-xl md:max-w-full lg:h-[911px] lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+    >
       <div className="flex flex-col mr-6 mb-6 md:mb-10">
-        <div >
+        <div>
           <h2 className="max-w-md mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none xl:max-w-lg">
-            Soluções Integradas para o Transporte Marítimo
+            Soluções em coleta de resíduos oleosos marítimos
           </h2>
         </div>
-        <div >
+        <div>
           <p className="text-base text-gray-700 md:text-lg">
-            Oferecemos soluções abrangentes e personalizadas para atender todas as suas necessidades de transporte marítimo, desde a logística completa até a consultoria técnica especializada.
+            Oferecemos soluções abrangentes e personalizadas para atender todas
+            as suas necessidades de coleta de resíduos oleosos marítimos, desde
+            a logística completa de coleta até os processos de transformação do
+            óleo para combustível.
           </p>
         </div>
       </div>
-      <div className="grid gap-8 row-gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-8 row-gap-10 sm:grid-cols-1 lg:grid-cols-2">
         <div>
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
             <svg
@@ -22,13 +28,25 @@ export default function Solutions() {
               strokeWidth="2"
               viewBox="0 0 24 24"
             >
-              <circle cx="12" cy="12" r="10" stroke="currentColor" fill="none" />
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                fill="none"
+              />
               <path d="M12 2 L12 12 L20 12" stroke="currentColor" fill="none" />
             </svg>
           </div>
-          <h6 className="mb-2 font-semibold leading-5">Logística Marítima</h6>
+          <h6 className="mb-2 font-semibold leading-5">
+            Logística completa de coleta
+          </h6>
           <p className="mb-3 text-sm text-gray-900">
-            Planejamento e coordenação de todas as etapas do transporte marítimo para garantir eficiência e redução de custos.
+            Desde a identificação do local do vazamento até a mobilização rápida
+            de equipes e equipamentos, fornecemos uma logística abrangente para
+            garantir uma resposta rápida e eficaz a incidentes de derramamento
+            de óleo. Isso inclui o transporte seguro de pessoal e equipamentos
+            para o local afetado.
           </p>
           <ul className="mb-4 -ml-1 space-y-2">
             <li className="flex items-start">
@@ -86,13 +104,6 @@ export default function Solutions() {
               Otimização
             </li>
           </ul>
-          <a
-            href="/"
-            aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-          >
-            Saiba mais
-          </a>
         </div>
         <div>
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
@@ -102,13 +113,31 @@ export default function Solutions() {
               strokeWidth="2"
               viewBox="0 0 24 24"
             >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="currentColor" fill="none" />
-              <path d="M8 21v-6a4 4 0 014-4h4a4 4 0 014 4v6" stroke="currentColor" fill="none" />
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="2"
+                ry="2"
+                stroke="currentColor"
+                fill="none"
+              />
+              <path
+                d="M8 21v-6a4 4 0 014-4h4a4 4 0 014 4v6"
+                stroke="currentColor"
+                fill="none"
+              />
             </svg>
           </div>
-          <h6 className="mb-2 font-semibold leading-5">Engenharia Naval</h6>
+          <h6 className="mb-2 font-semibold leading-5">
+            Tecnologias avançadas{" "}
+          </h6>
           <p className="mb-3 text-sm text-gray-900">
-            Projetos e serviços de manutenção para garantir a eficiência e segurança das embarcações.
+            Utilizamos uma variedade de tecnologias avançadas, como skimmers de
+            alta eficiência e barreiras de contenção, para recuperar o máximo
+            possível de óleo derramado da superfície da água, minimizando assim
+            o impacto ambiental.
           </p>
           <ul className="mb-4 -ml-1 space-y-2">
             <li className="flex items-start">
@@ -166,13 +195,6 @@ export default function Solutions() {
               Projetos
             </li>
           </ul>
-          <a
-            href="/"
-            aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-          >
-            Saiba mais
-          </a>
         </div>
         <div>
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
@@ -182,13 +204,25 @@ export default function Solutions() {
               strokeWidth="2"
               viewBox="0 0 24 24"
             >
-              <circle cx="12" cy="12" r="10" stroke="currentColor" fill="none" />
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                fill="none"
+              />
               <path d="M12 8 L12 16 L16 12" stroke="currentColor" fill="none" />
             </svg>
           </div>
-          <h6 className="mb-2 font-semibold leading-5">Consultoria Técnica</h6>
+          <h6 className="mb-2 font-semibold leading-5">
+            Processamento e transformação do óleo
+          </h6>
           <p className="mb-3 text-sm text-gray-900">
-            Serviços de avaliação, perícia técnica e treinamentos para garantir a conformidade e eficiência das operações marítimas.
+            Além da coleta do óleo derramado, oferecemos serviços de
+            processamento e transformação do óleo recuperado em combustível
+            utilizável. Isso pode incluir a separação de contaminantes e
+            impurezas, bem como a conversão do óleo em combustível seguro e
+            sustentável.
           </p>
           <ul className="mb-4 -ml-1 space-y-2">
             <li className="flex items-start">
@@ -246,13 +280,6 @@ export default function Solutions() {
               Treinamentos
             </li>
           </ul>
-          <a
-            href="/"
-            aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-          >
-            Saiba mais
-          </a>
         </div>
         <div>
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
@@ -270,9 +297,14 @@ export default function Solutions() {
               <path d="M12 2 L12 12 L20 12" stroke="currentColor" fill="none" />
             </svg>
           </div>
-          <h6 className="mb-2 font-semibold leading-5">Gestão Ambiental</h6>
+          <h6 className="mb-2 font-semibold leading-5">
+            Conformidade regulatória:
+          </h6>
           <p className="mb-3 text-sm text-gray-900">
-            Soluções sustentáveis e tecnologias de controle ambiental para operações marítimas responsáveis.
+            Garantimos que todas as nossas operações estejam em conformidade com
+            as regulamentações ambientais locais e internacionais. Nossas
+            práticas de coleta e processamento de resíduos são projetadas para
+            minimizar o impacto ambiental e proteger ecossistemas sensíveis.
           </p>
           <ul className="mb-4 -ml-1 space-y-2">
             <li className="flex items-start">
@@ -330,15 +362,8 @@ export default function Solutions() {
               Relatórios
             </li>
           </ul>
-          <a
-            href="/"
-            aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-          >
-            Saiba mais
-          </a>
         </div>
       </div>
     </div>
-    )
+  );
 }
