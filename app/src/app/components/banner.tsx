@@ -1,4 +1,3 @@
-import Image from "next/image";
 export default function Banner() {
   return (
     <div
@@ -8,13 +7,15 @@ export default function Banner() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         width: '100%',
-        height: '911px', // Defina a altura conforme necessário
+        height: '911px',
       }}
     >
       <h1 className="text-7xl">Nosso compromisso é com a natureza</h1>
-      <button className="bg-[#98c03b] hover:bg-lime-100 text-white font-semibold hover:text-black py-2 px-4 border border-[#98c03b] hover:border-transparent rounded">
-        Conheça nossas soluções
-      </button>
+      <a href="#solutions">
+        <button className="bg-[#98c03b] hover:bg-lime-100 text-white font-semibold hover:text-black py-2 px-4 border border-[#98c03b] hover:border-transparent rounded">
+          Conheça nossas soluções
+        </button>
+      </a>
     </div>
   );
 }
