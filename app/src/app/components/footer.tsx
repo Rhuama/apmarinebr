@@ -12,10 +12,10 @@ export default function Footer() {
             </div>
           </a>
           <div>
-            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Lojas virtuais</h3>
+            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Siga-nos</h3>
             <ul>
-              <li className="mb-4"><a href="https://flowbite.com" target="_blank" className="text-gray-600 hover:underline">Mercado Livre</a></li>
-              <li><a href="https://tailwindcss.com/" target="_blank" rel="nofollow" className="text-gray-600 hover:underline">Amazon</a></li>
+              <li className="mb-4"><a href="https://www.instagram.com/apmarinebr/" target="_blank" className="text-gray-600 hover:underline">Instagram</a></li>
+              <li><a href="https://www.facebook.com/ApMarineLtda/?locale=pt_BR" target="_blank" rel="nofollow" className="text-gray-600 hover:underline">Facebook</a></li>
             </ul>
           </div>
           <div>

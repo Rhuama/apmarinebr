@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header>
-      <nav className="bg-white bg-opacity-60 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800" style={{ position: "fixed", width: "100%"}}>
+      <nav className="bg-[#98c03b] border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800" style={{ position: "fixed", width: "100%"}}>
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="/" className="flex items-center">
             <Image src="/images/logo.png" width={250} height={80} alt="logo" />
@@ -17,7 +17,6 @@ export default function Header() {
               aria-controls="mobile-menu-2"
               aria-expanded="false"
             >
-              <span className="sr-only">Open main menu</span>
               <svg
                 className="w-6 h-6"
                 fill="currentColor"
@@ -43,6 +42,7 @@ export default function Header() {
                 ></path>
               </svg>
             </button>
+
           </div>
           <div
             className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
@@ -52,7 +52,7 @@ export default function Header() {
             <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-gray-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Home
                 </a>
@@ -60,7 +60,7 @@ export default function Header() {
               <li>
                 <a
                   href="#solutions"
-                  className="block py-2 pr-4 pl-3 text-gray-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Soluções
                 </a>
@@ -68,7 +68,7 @@ export default function Header() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-gray-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Quem somos
                 </a>
@@ -76,7 +76,7 @@ export default function Header() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-gray-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Contato
                 </a>
