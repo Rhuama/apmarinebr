@@ -7,8 +7,8 @@ export default function AboutUs() {
       </div>
       <div className="cards-container w-[50%] flex  flex-col justify-between items-center">
         <div className="card flex justify-center items-center flex-col w-[450px] h-[254px] rounded-[30px] bg-gray-200 shadow-lg">
+          <p>Missão</p>
           <p className="text-center p-4">
-            <p>Missão</p>
             Participamos efetivamente na proteção do meio ambiente, transformando
             resíduos oleosos agressivos à natureza em produto de alto valor
             agregado, e possibilitar aos nossos clientes redução significativa de
