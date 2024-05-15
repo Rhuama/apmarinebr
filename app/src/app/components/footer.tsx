@@ -2,56 +2,230 @@ import Image from "next/image"
 
 export default function Footer() {
     return (
-        <footer id="footer" className="border-t-2 py-16 flex flex-col">
-        <div className="flex flex-grow-0 flex-col md:flex-row text-center mb-16 space-y-8 md:space-y-0 sm:space-x-6 justify-center md:justify-around items-center">
-          <a className="md:self-start items-center" href="/">
-            <div className="flex justify-center items-center mb-8 md:my-0">
-              <div className="flex justify-center">
-                <Image src="/images/logo.png" width={250} height={80} alt="logo" />
-              </div>
+    <div id="contact" className="h-[911px] mt-16 bg-gray-900 text-gray-300">
+      <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
+          <div className="md:max-w-md lg:col-span-2">
+            <a
+              href="/"
+              aria-label="Go home"
+              title="AP Marine"
+              className="inline-flex items-center"
+            >
+               <Image src="/images/logo.png" width={250} height={80} alt="logo" />
+            </a>
+            <div className="mt-4 lg:max-w-sm">
+              <p className="text-sm text-gray-400">
+                Soluções integradas para transporte marítimo, engenharia naval, consultoria técnica, gestão ambiental e tecnologias de automação.
+              </p>
+              <p className="mt-4 text-sm text-gray-400">
+                Comprometidos com a excelência e a sustentabilidade em todas as nossas operações.
+              </p>
             </div>
-          </a>
-          <div>
-            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Siga-nos</h3>
-            <ul>
-              <li className="mb-4"><a href="https://www.instagram.com/apmarinebr/" target="_blank" className="text-gray-600 hover:underline">Instagram</a></li>
-              <li><a href="https://www.facebook.com/ApMarineLtda/?locale=pt_BR" target="_blank" rel="nofollow" className="text-gray-600 hover:underline">Facebook</a></li>
-            </ul>
           </div>
-          <div>
-            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Siga-nos</h3>
-            <ul>
-              <li className="mb-4"><a href="https://github.com/themesberg/flowbite" target="_blank" className="text-gray-600 hover:underline">Instagram</a></li>
-              <li><a href="https://discord.gg/4eeurUVvTy" target="_blank" className="text-gray-600 hover:underline">Facebook</a></li>
-            </ul>
+          <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
+            <div>
+              <p className="font-semibold tracking-wide text-teal-accent-400">
+                Soluções
+              </p>
+              <ul className="mt-2 space-y-2">
+                <li>
+                  <a
+                    href="/"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Logística Marítima
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Engenharia Naval
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Consultoria Técnica
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Gestão Ambiental
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-semibold tracking-wide text-teal-accent-400">
+                Sobre
+              </p>
+              <ul className="mt-2 space-y-2">
+                <li>
+                  <a
+                    href="/about"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Nossa Empresa
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/team"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Equipe
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/careers"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Carreiras
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/contact"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Contato
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-semibold tracking-wide text-teal-accent-400">
+                Recursos
+              </p>
+              <ul className="mt-2 space-y-2">
+                <li>
+                  <a
+                    href="/blog"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/faq"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    FAQ
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/support"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Suporte
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/privacy"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Privacidade
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-semibold tracking-wide text-teal-accent-400">
+                Social
+              </p>
+              <ul className="mt-2 space-y-2">
+                <li>
+                  <a
+                    href="https://www.facebook.com"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.twitter.com"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com"
+                    className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Termos</h3>
-            <ul>
-              <li className="mb-4"><a href="#" target="_blank" className="text-gray-600 hover:underline">Políticas de privacidade</a></li>
-              <li><a href="#" target="_blank" className="text-gray-600 hover:underline">Termos &amp; Condições</a></li>
-            </ul>
-          </div>
-          <div></div>
         </div>
-        <hr className="border-gray-200 sm:mx-auto" />
-        <div className="flex flex-col items-center justify-around">
-          <div className="flex my-4 space-x-6 sm:justify-center">
-            <a href="#" className="text-gray-500 hover:text-gray-900">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd"></path>
+        <div className="flex flex-col justify-between pt-5 pb-10 border-t border-gray-700 sm:flex-row">
+          <p className="text-sm text-gray-400">
+            © {new Date().getFullYear()} AP Marine. Todos os direitos reservados.
+          </p>
+          <div className="flex items-center mt-4 space-x-4 sm:mt-0">
+            <a
+              href="https://www.facebook.com"
+              className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
+                <path d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z" />
               </svg>
             </a>
-            <a href="#" className="text-gray-500 hover:text-gray-900">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clipRule="evenodd"></path>
+            <a
+              href="https://www.twitter.com"
+              className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
+                <path d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1c-1.1,0.2-2.2,0.4-3.3,0.5c-0.9-1-2.2-1.6-3.6-1.6c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1c-4.1-0.2-7.7-2.2-10.1-5.3
+C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1c-0.8-0.1-1.6-0.2-2.3-0.6c0,0.1,0,0.1,0,0.2c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2
+c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2
+c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6C22.5,6.4,23.3,5.5,24,4.6z" />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+            >
+              <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
+                <circle cx="15" cy="15" r="4" />
+                <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10 C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1 c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z" />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              className="transition-colors duration-300 text-gray-400 hover:text-teal-accent-400"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
+                <path d="M22.23,0H1.77C0.79,0,0,0.79,0,1.77v20.46C0,23.21,0.79,24,1.77,24h20.46C23.21,24,24,23.21,24,22.23V1.77 C24,0.79,23.21,0,22.23,0z M7.06,20.16H3.56V9h3.5V20.16z M5.31,7.66c-1.12,0-2.02-0.91-2.02-2.02S4.19,3.62,5.31,3.62 S7.33,4.53,7.33,5.64S6.43,7.66,5.31,7.66z M20.16,20.16h-3.5v-5.5c0-1.32-0.03-3.02-1.84-3.02c-1.84,0-2.12,1.44-2.12,2.92v5.6h-3.5 V9h3.36v1.52h0.05c0.47-0.88,1.61-1.8,3.31-1.8c3.54,0,4.19,2.33,4.19,5.36V20.16z" />
               </svg>
             </a>
           </div>
-          <span className="text-sm text-gray-500 sm:text-center">
-            <a href="https://github.com/RagAndRoll" target="_blank" className="hover:underline">© 2022 JSR publicidade. Todos os direitos reservados.</a>
-          </span>
         </div>
-      </footer>
-    )
-}
+      </div>
+    </div>
+  );
+};
