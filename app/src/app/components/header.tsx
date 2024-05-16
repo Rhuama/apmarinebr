@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header>
-      <nav className="bg-[#98c03b] border-gray-200 px-4 lg:px-6 py-2.5" style={{ position: "fixed", width: "100%"}}>
+      <nav className="bg-[#98c03b] border-gray-200 px-4 lg:px-6 py-2.5" style={{ position: "fixed", zIndex: "2", width: "100%"}}>
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="/" className="flex items-center">
             <Image src="/images/logo.png" width={250} height={80} alt="logo" />
