@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const baseURL = 'https://graph.instagram.com';
-const accessToken = 'IGQWRQNTE4ZAXkxMjl1eDE5dmNqSElpMHdJWU9oSjhXX0hLZAWVIU180ZAWZAVM0NJXzNWYS1URVljVUhyYi1aVUhfR3U0ZATEzVzV2NlFtQ3FwXzlsNjVnVW9XU0ZAPQmJqb3JKcWF6RXdBLUxGUQZDZD';
+const accessToken = process.env.BEARER_TOKEN;
 const fields = 'id,media_type,media_url,permalink,thumbnail_url,timestamp';
 
 export async function getInstagramPostDetails(postId: string) {
@@ -12,7 +12,9 @@ export async function getInstagramPostDetails(postId: string) {
         access_token: accessToken
       }
     });
+    console.log(response.data, 'aqui')
     return response.data;
+    
   } catch (error) {
     console.error('Erro ao obter detalhes da postagem do Instagram:', error);
     throw error;
