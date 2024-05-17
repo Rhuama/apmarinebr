@@ -9,10 +9,11 @@ export async function getInstagramPostDetails(postId: string) {
     const response = await axios.get(`${baseURL}/${postId}`, {
       params: {
         fields: fields,
-        access_token: accessToken
+      },
+      headers: {
+        'Authorization': `Bearer ${accessToken}`,
       }
     });
-    console.log(response.data, 'aqui')
     return response.data;
     
   } catch (error) {
@@ -34,13 +35,13 @@ export async function getAllInstagramPostsDetails(postIds: string[]) {
 export async function getInstagramPosts() {
   try {
     const response = await axios.get(`${baseURL}/me/media`, {
-      params: {
-        fields: 'id',
-        access_token: accessToken
+      headers: {
+        'Authorization': `Bearer ${accessToken}`,
       }
     });
     const postIds = response.data.data.map((post: any) => post.id);
     const postsDetails = await getAllInstagramPostsDetails(postIds);
+    console.log(response.data, 'aqui')
     return postsDetails;
   } catch (error) {
     console.error('Erro ao obter posts do Instagram:', error);
